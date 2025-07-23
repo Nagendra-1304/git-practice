@@ -1,7 +1,6 @@
 #!/bin/bash
 $PERSON1=nagendra
 $PERSON2=ramesh
-#conversation between ramesh and nagendra.
 
 echo "$PERSON1:: Hi $PERSON2, how are you"
 echo "$PERSON2:: Hi $PERSON1, Iam fine, how about you"
