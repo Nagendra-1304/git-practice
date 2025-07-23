@@ -2,7 +2,7 @@
 
 
 #index start from 0, size is 3
-FRUITS=("Apple" "KIWI" ORANGE") #Array
+FRUITS=("APPLE" "KIWI" "ORANGE") #Array
 
 echo "First fruit is : ${FRUITS[0]}"
 echo "second fruit is : ${FRUITS[1]}"
