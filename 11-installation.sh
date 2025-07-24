@@ -8,7 +8,7 @@ then
    echo "please run this script with root privilages"
    exit 1
 fi
-dnf  list install git 
+dnf  list install gittt 
 if [ $? -ne 0 ]
 then 
    echo "git is not installed, going to install it..."
