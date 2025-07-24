@@ -8,11 +8,11 @@ then
    echo "please run this script with root privilages"
    exit 1
 fi
-dnf  list install gittt 
+dnf  list install git 
 if [ $? -ne 0 ]
 then 
    echo "git is not installed, going to install it..."
-   dnf install gittt -y
+   dnf install git -y
    if [ $? -ne 0 ]
    then 
        echo "installation is not success, check it.."
@@ -23,3 +23,20 @@ then
 else
     echo "git is already installed, nothing to do.."   
 fi
+
+dnf list install mysql
+if [ $? -ne 0 ]
+then 
+    echo " mySQL is not installed, going to install"
+    dnf instal mysql -y
+    if [ $? -ne 0 ]
+    then 
+        echo "mySQL installation is failed, please check it.."
+        exit 1
+    else
+        echo "installation success"
+    fi
+else 
+    echo "mysql is already installed, nothing to do..."
+fi
+
