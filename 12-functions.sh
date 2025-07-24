@@ -18,7 +18,7 @@ then
    exit 1
 fi
 dnf  list install git
-VALIDATE $? Listing Git
+VALIDATE $? "Listing Git"
 # if [ $? -ne 0 ]
 # then 
 #    echo "git is not installed, going to install it..."
