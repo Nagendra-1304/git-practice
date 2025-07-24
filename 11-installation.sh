@@ -10,6 +10,3 @@ then
 fi
 dnf install git -y
 
-ls -ltr
-lsssss -sss
-ls -la
