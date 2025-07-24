@@ -48,7 +48,7 @@ fi
 # sh 15-Loops.sh git nginx mysql postfix
 for package in $@ # $@ refers to all arguments passed to it
 do
-dnf installed $packages &>>$LOG_FILE
+dnf installed $package &>>$LOG_FILE
 if [ $? -ne 0 ]
 then 
     echo "$package is not installed, going to install it.." | tee -a $LOG_FILE
