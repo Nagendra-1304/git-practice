@@ -12,7 +12,7 @@ Y="\e[33m"
 
 USAGE()
 {
-    echo -e "USAGE :: sh 19-backup.sh <source> <destination> <days(optional)>"
+    echo -e "$GUSAGE :: $N sh 19-backup.sh <source> <destination> <days(optional)>"
 }
 
 #check the source and destination are provided
@@ -37,7 +37,7 @@ echo "Files: $FILES"
 
 if [ ! -z $FILES ] # -z $FILES is empty, ! makes it expression not empty
 then 
-    echo " files are found"
+    echo "files are found"
     ZIP_FILE="$DEST_DIR/app-logs-$TIMESTAMP.zip"
     find ${SOURCE_DIR} -name "*.log" -mtime +14 | zip "$ZIP_FILE" -@
 
