@@ -12,7 +12,7 @@ Y="\e[33m"
 
 USAGE()
 {
-    echo -e "$GUSAGE :: $N sh 19-backup.sh <source> <destination> <days(optional)>"
+    echo -e "$G USAGE :: $N sh 19-backup.sh <source> <destination> <days(optional)>"
 }
 
 #check the source and destination are provided
