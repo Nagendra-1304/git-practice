@@ -4,7 +4,7 @@ USERID=$(id -u)
 #echo "user id is: $USERID"
 R="\e[31m"
 G="\e[32m"
-N="\e[0"
+N="\e[0m"
 CHECK_ROOT()
 {
     if [ $USERID -ne 0 ]
